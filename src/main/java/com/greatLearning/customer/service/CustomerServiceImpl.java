@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.greatLearning.customer.entity.Customer;
 import com.greatLearning.customer.repository.CustomerRepository;
 
-public class CustomerServiceImpl {
+public class CustomerServiceImpl implements CustomerService {
 	@Autowired
 	CustomerRepository customerRepository;
 	public List<Customer> getAllCustomers(){
